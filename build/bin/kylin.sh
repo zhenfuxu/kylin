@@ -61,7 +61,11 @@ function retrieveDependency() {
         verbose "hdp_version is ${hdp_version}"
     fi
 
+<<<<<<< HEAD
     source ${KYLIN_HOME}/bin/prepare-hadoop-dependency.sh
+=======
+    source ${KYLIN_HOME}/bin/prepare_hadoop_dependency.sh
+>>>>>>> 5187affe1 (KYLIN-5069 Refactor hive and hadoop dependency of kylin4)
 
     tomcat_root=${dir}/../tomcat
     export tomcat_root

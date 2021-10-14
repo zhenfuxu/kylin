@@ -127,7 +127,11 @@ object SparderContext extends Logging {
     getSparkSession.sparkContext.conf.get(key)
   }
 
+<<<<<<< HEAD
   def initSpark(): Unit = {
+=======
+  def initSpark(): Unit =
+>>>>>>> 5187affe1 (KYLIN-5069 Refactor hive and hadoop dependency of kylin4)
     this.synchronized {
       if (initializingThread == null && (spark == null || spark.sparkContext.isStopped)) {
         initializingThread = new Thread(new Runnable {
@@ -219,7 +223,6 @@ object SparderContext extends Logging {
       // init FileStatusCache
       ShardFileStatusCache.getFileStatusCache(getOriginalSparkSession)
     }
-  }
 
   def registerListener(sc: SparkContext): Unit = {
     val sparkListener = new SparkListener {
