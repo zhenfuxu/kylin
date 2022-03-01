@@ -117,7 +117,7 @@
     <h4>{{'Reload Table Metadata' | translate}}</h4>
   </div>
   <div class="modal-body">
-    <span><strong>Project: {{ $parent.projectName!=null?$parent.projectName:'NULL'}}</strong></span><br/>
+    <span><strong>{{'Project' | translate}}: {{ $parent.projectName!=null?$parent.projectName:'NULL'}}</strong></span><br/>
     <label for="tables"> {{'Are you sure to reload table' | translate}} {{selectTable}} ?</label><br/>
     <label ng-if="sourceType === '0'"><input type="checkbox" ng-model="isCalculate.val" > {{'Calculate column cardinality' | translate}}</label>
   </div>

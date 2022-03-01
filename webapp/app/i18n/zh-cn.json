@@ -677,5 +677,7 @@
     "The Property name is required": "属性名需要填写",
     "First": "首页",
     "Last": "尾页",
+    "No Saved Query.": "没有保存的查询。",
+    "No Query Result.": "没有查询结果。",
     "You should choose at least one timestamp type column generated from source schema.": "你应该选择至少一个时间戳类型列从源结构生成。"
 }

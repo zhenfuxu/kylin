@@ -63,7 +63,7 @@
                     </p>
                     <div class="pull-left">
                         <h4>
-                            Project: <span class="label label-info">{{projectModel.getSelectedProject()}}</span>
+                            {{'Project' | translate}}: <span class="label label-info">{{projectModel.getSelectedProject()}}</span>
                             &nbsp&nbsp {{'Cube' | translate}}:
                             <select chosen ng-model="specifyCube"
                                     ng-options="cube for cube in cubeItems"
@@ -88,7 +88,7 @@
 
             <div ng-show="mainPanel=='saved'">
                 <div ng-if="savedQueries.length==0">
-                    <div no-result text="No Saved Query."></div>
+                    <div no-result text="{{'No Saved Query.' | translate}}"></div>
                 </div>
                 <table class="table table-hover table-striped list">
                     <tr ng-repeat="query in savedQueries | reverse track by $index"
@@ -230,7 +230,7 @@
         </h3>
 
         <div ng-if="!curQuery">
-            <div no-result text="No Query Result."></div>
+            <div no-result text="{{'No Query Result.' | translate}}"></div>
         </div>
 
         <div ng-include="'partials/query/query_detail.html'"></div>
