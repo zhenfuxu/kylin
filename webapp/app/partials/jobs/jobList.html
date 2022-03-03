@@ -73,7 +73,7 @@
         <tr style="cursor: pointer">
           <th ng-repeat="theaditem in jobConfig.theaditems"
               ng-click="state.filterAttr= theaditem.attr;state.reverseColumn=theaditem.attr;state.filterReverse=!state.filterReverse; ">
-            {{theaditem.name}}
+            {{theaditem.name | translate}}
             <i ng-if="state.reverseColumn!= theaditem.attr"
                class="fa fa-unsorted"></i>
             <i ng-if="state.reverseColumn== theaditem.attr && !state.filterReverse"
