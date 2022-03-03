@@ -679,5 +679,9 @@
     "Last": "Last",
     "No Saved Query.": "No Saved Query.",
     "No Query Result.": "No Query Result.",
+    "Cube Size": "Cube Size",
+    "Source Records": "Source Records",
+    "Last Build Time": "Last Build Time",
+    "Create Time": "Create Time",
     "You should choose at least one timestamp type column generated from source schema.": "You should choose at least one timestamp type column generated from source schema."
 }
