@@ -92,9 +92,9 @@
     <div class="cube-detail" ng-show="cube.visiblePage=='notification'">
         <div style="margin: 15px;">
             <form>
-                <h5>Notification List(Comma Separated)</h5>
+                <h5>{{'Notification List(Comma Separated)' | translate}}</h5>
                 <div class="form-group">
-                    <input ng-model="cube.notifyListString" class="form-control" placeholder="Notification List..." />
+                    <input ng-model="cube.notifyListString" class="form-control" placeholder="{{'Notification List' | translate}}..." />
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primary btn-sm" ng-click="updateNotifyList(cube)">{{'Save' | translate}}</button>

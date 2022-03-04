@@ -683,5 +683,7 @@
     "Source Records": "源记录",
     "Last Build Time": "最后构建时间",
     "Create Time": "创建时间",
+    "Notification List": "通知列表",
+    "Notification List(Comma Separated)": "通知列表（逗号分隔）",
     "You should choose at least one timestamp type column generated from source schema.": "你应该选择至少一个时间戳类型列从源结构生成。"
 }

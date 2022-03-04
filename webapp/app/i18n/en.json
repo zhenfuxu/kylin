@@ -683,5 +683,7 @@
     "Source Records": "Source Records",
     "Last Build Time": "Last Build Time",
     "Create Time": "Create Time",
+    "Notification List": "Notification List",
+    "Notification List(Comma Separated)": "Notification List(Comma Separated)",
     "You should choose at least one timestamp type column generated from source schema.": "You should choose at least one timestamp type column generated from source schema."
 }
