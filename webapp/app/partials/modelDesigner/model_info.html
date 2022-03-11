@@ -48,7 +48,7 @@
             <div class="form-group middle-popover" ng-if="state.mode=='view'">
               <div class="row">
                 <label class="col-xs-12 col-sm-3 control-label no-padding-right font-color-default">
-                  <b>{{'Owner' | translate}}</b>
+                  <b data-translate="Owner">Owner</b>
                 </label>
 
                 <div class="col-xs-12 col-sm-6">
@@ -61,7 +61,7 @@
             <div class="form-group">
                 <div class="row">
                     <label class="col-xs-12 col-sm-3 control-label no-padding-right font-color-default">
-                        <b>{{'Description' | translate}}</b>
+                        <b data-translate="Description">Description</b>
                     </label>
                     <div class="col-xs-12 col-sm-6">
                         <textarea ng-if="state.mode=='edit'" class="form-control box-default"
@@ -85,8 +85,8 @@
         </div>
         <div class="box-body callout callout-warning">
             <ol>
-                <li>{{'Project can't be empty' | translate}}</li>
-                <li>{{'Model Name can't be empty' | translate}}</li>
+                <li data-translate="Project can't be empty">Project can't be empty</li>
+                <li data-translate="Model Name can't be empty">Model Name can't be empty</li>
             </ol>
         </div><!-- /.box-body -->
     </div>
@@ -95,7 +95,7 @@
 
 <script type="text/ng-template" id="modelNameTip.html">
 <ol>
-  <li>{{'Model name is unique name of entire system' | translate}}.</li>
-  <li>{{'Can not edit model name after created' | translate}}.</li>
+  <li data-translate="Model name is unique name of entire system">Model name is unique name of entire system.</li>
+  <li data-translate="Can not edit model name after created">Can not edit model name after created.</li>
 </ol>
 </script>

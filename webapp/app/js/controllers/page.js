@@ -18,7 +18,7 @@
 
 'use strict';
 
-KylinApp.controller('PageCtrl', function ($scope, $q, AccessService, $modal, $location, $rootScope, $routeParams, $http, $translate, UserService, ProjectService, SweetAlert, $cookieStore, $log, kylinConfig, ProjectModel, TableModel, JobList) {
+KylinApp.controller('PageCtrl', function ($scope, $q, AccessService, $modal, $location, $rootScope, $routeParams, $http, $translate, UserService, ProjectService, SweetAlert, $cookieStore, $log, kylinConfig, ProjectModel, TableModel, JobList, i18nService) {
 
   //init kylinConfig to get kylin.Propeties
   kylinConfig.init().$promise.then(function (data) {
@@ -40,6 +40,7 @@ KylinApp.controller('PageCtrl', function ($scope, $q, AccessService, $modal, $lo
 
   $scope.changeLanguage = function(languageKey) {
     $translate.use(languageKey);
+    i18nService.setCurrentLang(languageKey);
     // tmhDynamicLocale.set(languageKey);
   }
 
